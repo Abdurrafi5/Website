@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Belajar HTML</title>
+		<style>
+			.navbar {
+					position: flex;
+					width: 100%;
+					color: #BFBFFF;
+					background-color: #1F1FFF;
+					height: 60px;
+					display: flex;
+					top: 0;
+					box-sizing: border-box;
+					z-index: 1000;
+					align-items: center;
+					justify-content: space-between;
+					padding-right: 20px;
+					
+			}
+			.nav-links {
+				list-style: none;
+				display: flex;
+				gap: 25px;
+				
+			}
+			.nav-links a {
+				color: #BFBFFF;
+				text-decoration: none;
+				font-size: 17px;
+				transition: 0.3s;
+				
+				background-color: #4949FF;
+				color: #BFBFFF;
+				padding: 10px 20px;
+				border-radius: 10%;
+			}
+			.nav-links a:hover {
+				background-color: #BFBFFF;
+				color: #4949FF;
+			}
+			#content {
+				padding: 80px 20px;
+				background: linear-gradient( 134deg, #6a5af9, #5ac8fa);
+				color: #fff;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+			}
+			.logo {
+				color: #BFBFFF;
+				text-shadow: 0 0 7px white;
+				margin-left: 10px;
+				font-size: 21px;
+				font-weight: bold;
+				background-color: #4949FF;
+				border-radius: 50%;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+	<nav class="navbar">
+		<div class="logo">Bro</div>
+		<ul class="nav-links">
+			<li><a href="#">Beranda</a></li>
+			<li><a href="../Belajar 5/index.html">Profile</a></li>
+			<li><a href="#">Kontak</a></li>
+			<li><a href="#">Pengunjung</a></li>
+		</ul>
+	</nav>
+	<section id="content">
+		<h1>Selamat Datang!</h1>
+		<p>Semoga Semoga</p>
+	</section>
+	</body>
+</html>
