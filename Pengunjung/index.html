@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Pengunjung</title>
+		<style>
+			.navbar {
+				position: flex;
+				width: 100%;
+				color: #BFBFFF;
+				background-color: #000000;
+				height: 60px;
+				display: flex;
+				top: 0;
+				box-sizing: border-box;
+				z-index: 1000;
+				align-items: center;
+				justify-content: space-between;
+				padding-right: 20px;
+			}
+
+			.nav-links {
+				list-style: none;
+				display: flex;
+				gap: 25px;
+			}
+
+			.nav-links a {
+				color: #BFBFFF;
+				text-decoration: none;
+				font-size: 17px;
+				transition: 0.3s;
+				
+				background-color: #4949FF;
+				padding: 10px 20px;
+				border-radius: 10%;
+			}
+
+			.nav-links a:hover {
+				background-color: #BFBFFF;
+				color: #4949FF;
+			}
+			
+			.logo {
+				color: #BFBFFF;
+				text-shadow: 0 0 7px white;
+				margin-left: 10px;
+				font-size: 21px;
+				font-weight: bold;
+				background-color: #4949FF;
+				border-radius: 50%;
+				padding: 10px;
+			}
+
+			.card {
+				width: 250px;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+				overflow: hidden;
+				text-align: center;
+				margin: 10px;
+			}
+			
+			.card:hover {
+				background-color: grey;
+				color: white;
+			}
+			
+			.card-img {
+				width: 100%;
+				height: 50%;
+				object-fit: cover;	
+			}
+			
+			.card-btn {
+				background-color: #007bff;
+				color: white;
+				border: none;
+				padding: 10px 15px;
+				border-radius: 5px;
+				cursor: pointer;
+				margin: 10px 0 15px;
+			}
+			
+			.card-title {
+				font-size: 18px;
+				margin: 10px 0 5px;
+			}
+			
+			.card-subtitle {
+			 font-size: 10px
+			 color: #555;
+			 padding: 0 10px;
+			}
+			
+			.all-card {
+				display: flex;
+				gap: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo">Pengunjung</div>
+			<ul class="nav-links">
+				<li><a href="../index.html">Beranda</a></li>
+				<li><a href="../Profile/index.html">Profile</a></li>
+				<li><a href="#">Kontak</a></li>
+				<li><a href="index.html">Pengunjung</a></li>
+			</ul>
+		</nav>
+		<div class='all-card'>
+			<div class='card'>
+				<img src='../Image/profile.jpg' class='card-img' />
+				<h4 class='card-title'>Abdurrafi Firlan Putra</h4>
+				<p class='card-subtitle'>Wibu | Bikin Website dari ChatGPT</p>
+				<button class="card-btn">Profile</button>
+			</div>
+			<div class='card'>
+				<img src='../Image/profile.jpg' class='card-img' />
+				<h4 class='card-title'>Faiz Alin Nuha</h4>
+				<p class='card-subtitle'>Pencinta Cosplay | Anak DKV yang nyasar kePPLG</p>
+				<button class="card-btn">Profile</button>
+			</div>
+			<div class='card'>
+				<img src='../Image/profile.jpg' class='card-img' />
+				<h4 class='card-title'>Ahmad Syahid</h4>
+				<p class='card-subtitle'>Anak Forsaken | Gacha bau di Sols RNG</p>
+				<button class="card-btn">Profile</button>
+			</div>
+		</div>
+	</body>
+</html>
